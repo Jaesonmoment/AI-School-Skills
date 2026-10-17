@@ -6,6 +6,23 @@ The goal is to actually understand what you learn, well enough to use it on your
 
 > **Built for Claude Projects.** This is built and optimized for the Projects feature in Claude (in beta right now, and for Projects once it is fully released). In a Project, the project chat acts as your principal, every class gets its own thread with its own teacher, and lessons can arrive on a schedule. It also works in Claude Code, the Claude app and Codex, with one conversation per class.
 
+## Quick start (Claude Projects)
+
+Follow these steps in order. Every gray box can be copied and pasted as is.
+
+1. **Install the two skills.** Follow "Claude Projects, Claude.ai or the Claude app" under [Install](#install) below.
+2. **Create a new project** in Claude for your school.
+3. **Turn on memory for the project** if it's offered, so your principal and teachers remember your decisions between sessions.
+4. **Start the admissions interview.** Paste this into the project chat:
+   ```
+   Run ai-school-setup and enroll me.
+   ```
+5. **Answer the counselor's questions.** First a standard set, then personal follow-ups built from your answers. When it reads back its summary, correct anything it got wrong.
+6. **Paste in your setup blocks.** The counselor hands you a project goal, project instructions and personal preferences, each in its own copy box with where it goes. **Read each one before you paste it** and fix anything that's wrong or missing. (Prefer to write your own? Start from the templates in [Copy and paste setup](#copy-and-paste-setup).)
+7. **Meet your teachers.** The counselor opens one thread per class. Answer each teacher's starting questions there, and lessons begin.
+
+From then on, the project chat is your principal: go there to add, drop or pause a class, or to ask how things are going.
+
 ## What's inside
 
 Two skills that work together:
@@ -59,17 +76,7 @@ cp -r AI-School-Skills/skills/* ~/.agents/skills/
 
 To use them in one project only, copy the folders into that project's `.agents/skills/` folder instead. You can also ask Codex's built-in `$skill-installer` to install them from this repository's link.
 
-## Getting started in a Claude Project
-
-1. **Create a project** for your school.
-2. **Turn on memory for the project** if it's offered. The principal and teachers then remember your decisions between sessions instead of asking again.
-3. **Paste in a goal and instructions** (see "Copy and paste setup" below). You can also let the admissions counselor write these for you in step 4.
-4. **In the project chat, say:** `Run ai-school-setup and enroll me.` The counselor interviews you, reads back what it heard, then sets up your school and opens a thread for each class.
-5. **Answer each teacher's starting questions** in its thread. Lessons start after that.
-
-From then on, the project chat is your principal: go there to add, drop or pause a class, or to ask how things are going.
-
-## Getting started anywhere else
+## Quick start without Projects (Claude Code, Claude app, Codex)
 
 1. Start a conversation and say `Run ai-school-setup and enroll me.` (In Claude Code: `/ai-school:ai-school-setup`.)
 2. When it's done, open a new conversation for each class and say `You're my teacher for [class]. Follow the school-teacher skill.`

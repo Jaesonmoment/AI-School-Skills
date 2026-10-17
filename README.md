@@ -40,7 +40,7 @@ Two skills that work together:
   - **Writes a private report after every class session,** with what happened, the evidence and its analysis, so nothing gets lost when a long conversation gets summarized and every lesson builds on the last.
   - **Follows a weekly rhythm:** lessons on weekdays, a free day, and a planning day where it reviews your week and writes a report for the principal.
 - **The principal** (your project chat) oversees the school. Every week it reads all the teachers' reports and sends you a progress report: how you're doing in each class, where you grew, your test scores and its honest take on what to focus on next.
-- **Your style, your call.** Pick story mode (it feels like a real school, with teachers in character, quests and a report-card ceremony) or straight to the point (no roleplay). Get test scores right away, or have them announced in your weekly progress report.
+- **Your style, your call.** Pick story mode (it feels like a real school, with teachers in character, quests and a report-card ceremony) or straight to the point (no roleplay, the default). Get test scores right away, or have them announced in your weekly progress report.
 - **Portal (optional).** A visual home page for your school, built as an interactive Claude artifact, with your classes, progress, notes and results in one place. The counselor offers it during setup with a heads-up that it uses noticeably more of your Claude usage, so it's only built if you say yes.
 
 ## Install

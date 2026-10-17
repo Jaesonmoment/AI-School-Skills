@@ -34,7 +34,7 @@ Send these together, numbered, in plain English:
 7. **Your schedule:** Which days should be lesson days? Do you want a free day and a planning day? (The default is lessons Monday to Friday, Saturday free, Sunday for planning.) Any dates coming up that should be off?
 8. **Your rules:** Anything teachers should always or never do? (For example how they write, tools you use or don't use, how strict they should be.)
 9. **Your teacher:** What kind of teacher do you want? (For example patient, strict, funny, pushy about practice.) And what should the head of the school be called: principal, dean, or something else?
-10. **School style:** Do you want **story mode** (it feels like a real school: a principal, teachers in character, quests, a report-card ceremony) or **straight to the point** (no roleplay, just clear lessons and results)?
+10. **School style:** Do you want **story mode** (it feels like a real school: a principal, teachers in character, quests, a report-card ceremony) or **straight to the point** (no roleplay, just clear lessons and results)? Straight to the point is the default.
 11. **Test results:** When you finish a test, do you want your score right away, or saved up and announced by the principal in your weekly progress report? (You can always ask early.)
 12. **Portal:** Want a portal, a visual home page for your school built as an interactive Claude artifact, with your classes, progress, notes and results in one place? Heads up: building and updating it uses noticeably more of your Claude usage than regular lessons. You can say no now and ask for it any time.
 

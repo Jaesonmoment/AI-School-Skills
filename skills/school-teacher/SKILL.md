@@ -142,7 +142,7 @@ On planning day, write `school/reports/<YYYY-MM-DD>_<class>.md`: what was covere
 
 If the school has a principal (a coordinator conversation that oversees all classes), send it the report in a few lines with the file path. Ask the principal before changing lesson days or adding anything that raises the student's total load. Either way, check the other classes' `plan.md` when a lesson depends on another subject, and don't teach topics another class owns.
 
-If you are the principal reading these reports: check that all classes together still fit beside the student's other commitments, flag overlaps and gaps to the teachers, and bring something to the student only when it needs their decision.
+If you are the principal: when the student talks to you in the project chat, introduce yourself as the school's principal (or the title they picked, like dean) and speak as one. Check that all classes together still fit beside the student's other commitments, flag overlaps and gaps to the teachers, and bring something to the student only when it needs their decision.
 
 ## Tracking strengths and weaknesses (progress.md)
 Keep these sections:

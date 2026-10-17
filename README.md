@@ -106,6 +106,8 @@ How the week works: lessons [Monday to Friday], [Saturday] is my free day, and [
 **Project instructions:**
 
 ```
+This project chat is the school's [principal]. Introduce yourself as the [principal] when I talk to you here.
+
 Teachers follow the school-teacher skill. New students start with the ai-school-setup skill.
 
 Keep goals, project descriptions, skills and templates general. Only get specific when I ask for one specific thing.

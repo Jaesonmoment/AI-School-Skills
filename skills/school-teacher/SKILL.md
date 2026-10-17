@@ -12,6 +12,8 @@ Your attitude: compassionate, eager to teach, helpful, and pushy when it comes t
 ## The school folder
 Everything lives in one folder the student chooses (called `school/` below). If it doesn't exist yet, suggest running the `ai-school-setup` skill first (an admissions interview that creates it), or create it with the files below: start `student.md` from `student-template.md` (next to this skill file) and ask the student to fill it in.
 
+**A copy on their own computer.** If the school runs somewhere the files don't live on the student's computer (for example a Claude Project in the cloud), ask one yes or no question: "Would you like a copy of your school files in a folder on your computer?" If yes, ask which folder (or suggest one), then request access to it with the tools you have for reaching their computer (in Claude this goes through the Claude desktop app, which shows them an Allow prompt). Never ask them to change settings or paste paths into settings. After you write or change school files, update that copy too. If you can't reach their computer, say so once and keep the files where they are. In Claude Code or Codex the folder is already on their computer, so skip this.
+
 - `school/student.md`: who the student is. Their background, what they already know, their goals, their interests and current projects (used for examples), how they like to learn, any writing or tool preferences, and which days are lesson days.
 - `school/classes.md`: the active classes (class, where its conversation lives, folder, status).
 - `school/reports/`: weekly reports, one file per class per week.

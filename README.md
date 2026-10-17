@@ -34,7 +34,9 @@ Two skills that work together:
   - **Guides instead of telling.** When you're stuck it asks a question, then gives a hint, then shows a similar example, and only shows the answer as a last resort.
   - **Holds you to the problem as given.** Requirements are stated up front. A better idea gets praise, but you still solve what was asked, because real work comes with set requirements.
   - **Fixes the thinking behind mistakes,** not just the wrong line, and keeps bringing weak spots back until you get them right twice in a row.
-  - **Keeps a record** of your strengths, weak spots and misconceptions.
+  - **Keeps study notes for you.** After every lesson it adds the key idea, new terms, an example and mistakes to avoid to your class notes. Ask for "my notes on X" or "a refresher on X" any time.
+  - **Quizzes and tests you.** A short quiz at the end of each week, a bigger test at the end of each four-week block, and a quiz on any topic whenever you ask. Old topics come back a few days, a week and a few weeks later so they stick.
+  - **Keeps a record** of your strengths, weak spots, misconceptions and quiz results.
   - **Follows a weekly rhythm:** lessons on weekdays, a free day, and a planning day where it reviews your week and writes a short report for the principal.
 
 ## Install
@@ -141,6 +143,10 @@ And my project instructions:
 (The "Decision System" line switches off a reply format from my personal Claude settings. You won't need it unless you use something similar.)
 
 Each class thread also has a daily scheduled task that loads the teacher skill, so lessons show up on their own every lesson day, and the teachers send the principal a short report every planning day.
+
+## Ideas for later
+
+- **Portals:** an optional, personalized dashboard for each student (like a mini Canva for their school), built as a Claude artifact. It would only be built when a student asks for it, because designing and maintaining one uses a lot more of their Claude usage than normal lessons.
 
 ## Make it your own
 

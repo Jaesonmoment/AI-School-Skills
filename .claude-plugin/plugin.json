@@ -1,7 +1,7 @@
 {
   "name": "ai-school",
-  "version": "1.0.0",
-  "description": "Run your own AI school: each class gets a Claude teacher that plans lessons, tutors you toward the answer and tracks your strengths and weak spots.",
+  "version": "1.1.0",
+  "description": "Run your own AI school: an admissions counselor sets it up, then each class gets a Claude teacher that plans lessons, tutors you toward the answer and tracks your strengths and weak spots.",
   "author": { "name": "Jaesonmoment" },
   "homepage": "https://github.com/Jaesonmoment/AI-School-Skills",
   "repository": "https://github.com/Jaesonmoment/AI-School-Skills",

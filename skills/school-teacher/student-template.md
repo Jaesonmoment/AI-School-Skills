@@ -19,3 +19,12 @@ Anything teachers should always or never do (writing style, tools you use, tools
 
 ## Schedule
 Which days are lesson days, which day is free, and which day is for planning.
+
+## School style
+Story mode (feels like a real school, with a principal, teachers in character and quests) or straight to the point (no roleplay).
+
+## Test results
+Right away, or saved for the principal's weekly progress report.
+
+## Portal
+Yes or no to a visual home page for your school (uses more of your Claude usage).

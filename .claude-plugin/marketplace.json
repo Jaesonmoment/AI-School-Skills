@@ -1,0 +1,12 @@
+{
+  "name": "ai-school-skill",
+  "description": "The AI School teacher skill, packaged as a Claude Code plugin.",
+  "owner": { "name": "Jaesonmoment" },
+  "plugins": [
+    {
+      "name": "ai-school",
+      "source": "./",
+      "description": "A personal tutor for each class in your own AI school."
+    }
+  ]
+}

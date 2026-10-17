@@ -37,7 +37,11 @@ Two skills that work together:
   - **Keeps study notes for you.** After every lesson it adds the key idea, new terms, an example and mistakes to avoid to your class notes. Ask for "my notes on X" or "a refresher on X" any time.
   - **Quizzes and tests you.** A short quiz at the end of each week, a bigger test at the end of each four-week block, and a quiz on any topic whenever you ask. Old topics come back a few days, a week and a few weeks later so they stick.
   - **Keeps a record** of your strengths, weak spots, misconceptions and quiz results.
-  - **Follows a weekly rhythm:** lessons on weekdays, a free day, and a planning day where it reviews your week and writes a short report for the principal.
+  - **Writes a private report after every class session,** with what happened, the evidence and its analysis, so nothing gets lost when a long conversation gets summarized and every lesson builds on the last.
+  - **Follows a weekly rhythm:** lessons on weekdays, a free day, and a planning day where it reviews your week and writes a report for the principal.
+- **The principal** (your project chat) oversees the school. Every week it reads all the teachers' reports and sends you a progress report: how you're doing in each class, where you grew, your test scores and its honest take on what to focus on next.
+- **Your style, your call.** Pick story mode (it feels like a real school, with teachers in character, quests and a report-card ceremony) or straight to the point (no roleplay). Get test scores right away, or have them announced in your weekly progress report.
+- **Portal (optional).** A visual home page for your school, built as an interactive Claude artifact, with your classes, progress, notes and results in one place. The counselor offers it during setup with a heads-up that it uses noticeably more of your Claude usage, so it's only built if you say yes.
 
 ## Install
 
@@ -145,10 +149,6 @@ And my project instructions:
 (The "Decision System" line switches off a reply format from my personal Claude settings. You won't need it unless you use something similar.)
 
 Each class thread also has a daily scheduled task that loads the teacher skill, so lessons show up on their own every lesson day, and the teachers send the principal a short report every planning day.
-
-## Ideas for later
-
-- **Portals:** an optional, personalized dashboard for each student (like a mini Canva for their school), built as a Claude artifact. It would only be built when a student asks for it, because designing and maintaining one uses a lot more of their Claude usage than normal lessons.
 
 ## Make it your own
 

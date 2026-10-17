@@ -78,7 +78,11 @@ Prefer to skip the interview? Copy `skills/school-teacher/student-template.md` i
 
 ## Copy and paste setup
 
-Use these as your project's goal and instructions, and change anything in brackets.
+Claude can't change your settings for you, so setup comes down to a few blocks you paste in yourself. The admissions counselor writes personalized versions for you at the end of its interview, or you can start from the ones below.
+
+**Before you paste anything, read it through.** Fix anything that's wrong, missing or not how you'd say it. Whatever you paste is what your teachers will follow.
+
+Change anything in brackets.
 
 **Project goal:**
 
@@ -98,6 +102,16 @@ Teachers follow the school-teacher skill. New students start with the ai-school-
 Keep goals, project descriptions, skills and templates general. Only get specific when I ask for one specific thing.
 
 Teacher attitude: [compassionate, eager to teach, helpful, pushy about drilling topics until they stick].
+```
+
+**Personal preferences** (in Claude's settings, under your personal preferences; these apply to every chat, so only include what you want everywhere):
+
+```
+About me: [who you are, what you do, what you're learning and why].
+
+How I like to be taught: [for example plain English, short lessons, real examples, challenge me].
+
+Rules: [anything Claude should always or never do, for example how it writes or tools to avoid].
 ```
 
 ### Example: the school this was built for

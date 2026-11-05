@@ -20,6 +20,9 @@ Anything teachers should always or never do (writing style, tools you use, tools
 ## Schedule
 Which days are lesson days, which day is free, and which day is for planning.
 
+## Class format
+In-person classroom (a live class, step by step in the conversation) or online class (each lesson delivered whole, you work through it on your own schedule).
+
 ## School style
 Story mode (feels like a real school, with a principal, teachers in character and quests) or straight to the point (no roleplay).
 

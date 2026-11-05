@@ -32,5 +32,8 @@ Story mode (feels like a real school, with a principal, teachers in character an
 ## Test results
 Right away, or saved for the principal's weekly progress report.
 
+## Usage
+Full or light mode. Light mode skips extras and keeps messages and files short, but still fact-checks everything it teaches.
+
 ## Portal
 Yes or no to a visual home page for your school (uses more of your Claude usage).

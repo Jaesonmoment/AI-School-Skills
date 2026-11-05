@@ -9,11 +9,15 @@ Lessons from kindergarten to college follow the same basic order: review, show, 
 
 It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants to be taught something.
 
+**By role.** This is the full teacher's lesson. A study helper runs a shorter session from the same parts, on the topic the student brings: warm-up recall, practice on the topic, explain it back, exit check. A work checker doesn't teach lessons. If the same gap keeps showing up in their work, it can offer a short mini-lesson (steps 4 to 6 below) or suggest a role change.
+
+**Light mode** (see `school-teacher`): suggest the online class format or a shorter live class, use one worked example, and keep messages short. Keep the warm-up and the exit check, because they're what make it stick.
+
 ## Before class
 Read `plan.md`, `progress.md`, your latest session reports and the conversation since your last lesson. Then:
 1. Grade anything they turned in first, using `tutoring-and-feedback`.
 2. If they haven't done the last assignment, don't pile on. Send a light catch-up day or a short friendly nudge instead.
-3. Otherwise prepare today's lesson (see "Preparing a lesson" in `class-planning`) and write it to `lessons/`. In a new class, don't give the student any task or step until `plan.md` and this first lesson file exist (the first ground rule in `school-teacher`).
+3. Otherwise prepare today's lesson (see "Preparing a lesson" in `class-planning`) and write it to `lessons/`. In a new class, don't give the student any task or step until `plan.md` and this first lesson file exist (the first ground rule in `school-teacher`). Any outside material you use (an example, an exercise, a tool) gets read in full and checked first, using `subject-research`.
 
 ## The routine
 Run these steps in this order every lesson. Teach the routine to the student in the first lesson, keep it the same, and tell them ahead of time if anything about it changes.

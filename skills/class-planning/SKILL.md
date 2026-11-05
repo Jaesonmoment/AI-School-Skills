@@ -1,27 +1,43 @@
 ---
 name: class-planning
-description: Plan a class the way strong teachers do, working backward from what the student must be able to do. Use when starting a new class, writing or revising a course plan, planning next week, or preparing a lesson before teaching it.
+description: Plan a class the way strong teachers do. Research the subject first, find the student's real level with a placement check built from that research, then plan backward from what they must be able to do. Use when starting a new class, writing or revising a course plan, planning next week, or preparing a lesson.
 ---
 
 # Class planning
 
-Real teachers at every level plan the same way: first decide what the learner must be able to do, then decide what will prove it, and only then plan the lessons. This skill walks you through that for a whole class, a week and a single lesson.
+Real teachers at every level plan the same way: first decide what the learner must be able to do, then decide what will prove it, and only then plan the lessons. And they plan from two kinds of evidence: how the subject is actually built, and what this learner can actually do. This skill walks you through that for a whole class, a week and a single lesson.
 
 It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone planning how to learn something. Outside a school, keep the plan in the conversation or a file the student picks.
 
 ## Starting a new class
-1. **Get to know where they start.** Before teaching anything, send 5 targeted questions in one message: what they already know, what they have built with it, their goal for this subject, how they like to learn, and one small "show me" question they can answer in a few lines, with nothing to open or build, that reveals their real level. If `progress.md` already has a starting point from the admissions interview, read it first and only ask what is still missing. Don't trust self-ratings alone; the "show me" answer is the real evidence.
-2. **Check if it's a big category** (see "Big categories" below). If it is, suggest a split before planning.
-3. **Research the subject** (see "Research").
-4. **Write the course map** in `plan.md` (see below).
-5. **Write `README.md`**: how this class works, in the same style as the other classes.
-6. **Write the first lesson plan** into `lessons/` (see "Preparing a lesson"), then check that `plan.md` and the first lesson file both exist. Only then give the student their first task or step. This is the first ground rule in `school-teacher`, and it holds even if the student says "let's start."
+Don't plan from a handful of questions, and don't judge their level before you know the subject. Work in this order:
 
-## The course map (plan.md)
-Plan backward, in this order:
+1. **Aim first.** One short message with only what you need to aim your research: what they want out of this class (as concrete as possible), the role they want for it (study helper, full teacher or work checker; see `school-teacher`), any outside target (a job posting, a certification, an exam, a project), and what they've already done with the subject. Read `student.md` and `progress.md` first and only ask what's missing. This message aims the research. It doesn't measure their level.
+2. **Research the subject before judging their level,** using `subject-research`. Find out how real teachers and respected courses already teach it (their syllabi and lesson plans), plus official docs and current versions, standards or certification outlines if they exist, job postings that match their goal, and the misconceptions beginners usually have. Read and fact-check what you find before relying on it. From that, build a **skill map**: the skills in the subject, in the order they build on each other, from the basics up to their goal. Save it in `research.md` with sources.
+3. **Run a placement check built from the skill map.** Measure their real level against the map with real tasks, never with self-ratings:
+   - Start at the basics of the map and work up: predict what this does, explain why, spot the mistake, write a few lines. Keep every task answerable right in the chat, with nothing to open, install or build (the first ground rule in `school-teacher`).
+   - Go in rounds, one round per message. Where they succeed, jump ahead. Where they miss twice on a skill, stop that branch, because that's where teaching starts.
+   - Keep going until you know where they stand on every part of the map that matters for their goal. A complex subject takes more rounds, and that's fine.
+   - Tell them it isn't graded. Its only job is to find where to start, so "I don't know" is a useful answer.
+   - Record the result for each skill in `progress.md` under "Starting point."
+4. **Check for a big category** (see "Big categories" below). If the skill map turns out to be several distinct skills, suggest a split before planning.
+5. **Write the plan** for the role (see "By role" below) into `plan.md`.
+6. **Write the first lesson plan** into `lessons/` (see "Preparing a lesson"), then check that `plan.md` and the first lesson file both exist. Only then give the student their first real task or step. This is the first ground rule in `school-teacher`, and it holds even if the student says "let's start."
+7. **Read it back.** Send a short summary of where they stand, what the plan is and why, and let them correct it before the first lesson.
+8. **Write `README.md`**: how this class works and its role, in the same style as the other classes.
+
+**By role:**
+- **Full teacher:** every step above, then the full course map below.
+- **Study helper:** research and place them on the topic they want to solidify, not the whole subject. Instead of a course map, keep a **focus list** in `plan.md`: the topics to solidify, weakest first, each with what "solid" will look like (for example "explains it without notes and solves a fresh problem").
+- **Work checker:** no course map or placement rounds. Research the kind of work they'll bring (its language or tools, usual requirements and common mistakes) with `subject-research`, so your checks are accurate. Judge their level from the first pieces of work and record it in `progress.md`.
+
+**Light mode** (see `school-teacher`): research with two strong sources, run one combined placement round, and keep the plan short.
+
+## The course map (plan.md, full teacher)
+Plan backward from the skill map and the placement results, in this order:
 1. **Outcomes.** Write 3 to 6 "By the end, you will be able to..." statements with verbs you can observe (build, explain, fix, compare, choose), never "understand" or "know about."
 2. **Proof.** For each outcome, decide what would show it, before planning any lessons. Make the proof look like real use: a realistic task built from a blank start without notes, a bug found and fixed, a choice explained the way they'd explain it to an interviewer or a coworker. Recall quizzes check the pieces; real tasks check the outcome.
-3. **Prerequisites.** List what has to come first, and check the student has it.
+3. **Prerequisites.** List what has to come first, from the skill map, and use the placement results to see which ones the student already has.
 4. **Units.** Group the lessons into units, each with one open "big question" that ties it together and comes back each week.
 5. **Return points.** Mark where earlier ideas come back later, so review is planned, not left to chance.
 6. **Weeks.** Lay out the current 4 weeks: a goal for each week and a milestone at the end of each week the student can show off, tied to their own projects where possible.
@@ -33,6 +49,8 @@ Rules for the map:
 - **Mix lesson types.** Tag each planned lesson as learning something new, making sense of it, or using it in a new situation. Make sure "new situation" lessons show up regularly, not only at the end.
 
 ## Planning day: the next week
+A full teacher does all of this. A study helper does steps 1, 2 and 4 against its focus list. A work checker skips planning and only writes its weekly report.
+
 On the weekly planning day (and whenever a block of weeks ends):
 1. Look back first using `progress-reports`. Answer four questions: What was the student supposed to learn? What is the evidence they learned it? What do we do where they didn't? What do we do where they already had it?
 2. Research next week's topic.
@@ -53,11 +71,12 @@ Before teaching any lesson, prepare it the way Japanese teachers prepare a resea
 Keep the plan short. It's a set of slots to fill, not a script. The lesson itself runs on `lesson-teaching`.
 
 ## Research
-Before planning a week, and before teaching any topic you haven't covered yet, research it:
+Research comes before planning, before placement and before teaching any topic you haven't covered yet. `subject-research` has the full method (finding real courses and lesson plans, reading them fully, fact-checking and judging them). At minimum, cover:
 - Official docs and current versions, so lessons aren't outdated.
 - Common beginner mistakes and misconceptions for the topic.
 - Good exercises and free interactive tools.
 - How the topic comes up in junior-level interviews and job postings.
+- How it fits in the skill map: what it builds on and what builds on it.
 
 Save short notes and links in `research.md` and list sources at the bottom of each lesson.
 
@@ -89,6 +108,7 @@ Other categories will split differently, so work out the split from the subject 
 - Outcomes with observable verbs and matching assessments ("alignment"): [Carnegie Mellon Eberly Center](https://www.cmu.edu/teaching/assessment/basics/alignment.html).
 - "Forward-looking" assessment that copies real use: [Fink, Guide to Designing Courses](https://medicine.wright.edu/sites/medicine.wright.edu/files/page/attachments/Self_Directed_Guide_to_Course_Design.pdf).
 - The four questions come from professional learning communities (DuFour and Eaker): [summary](https://academyofsingaporeteachers.moe.edu.sg/professional-excellence/our-plc-journey/ideas-questions-dimensions-for-effective-plcs/).
+- Diagnose prior knowledge before teaching, because it can help or get in the way, and don't trust self-reports: [How Learning Works summary](https://fctl.ucf.edu/wp-content/uploads/sites/15/2020/06/Teaching-and-Learning-Principles.pdf).
 - Rigid pacing guides crowd out reteaching: [ASCD, What Research Says About Pacing Guides](https://ascd.org/el/articles/pacing-guides).
 - Japanese lesson study plans the expected answers and mistakes in advance: [NCTM, Lewis and Perry 2017](https://nctm.org/Publications/Journal-for-Research-in-Mathematics-Education/2017/Vol48/Issue3/Lesson-Study-to-Scale-Up-Research-Based-Knowledge_-A-Randomized,--Controlled-Trial-of-Fractions-Learning).
 - A structured AI tutor that worked used pre-written, verified solutions: [Kestin et al. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12179260/).

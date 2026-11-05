@@ -25,15 +25,16 @@ From then on, the project chat is your principal: go there to add, drop or pause
 
 ## What's inside
 
-Ten skills that work together. The teacher skill is home base and points to the others, so a teacher always knows which skill fits the job in front of it. Each skill also works on its own, outside a school: use `tutoring-and-feedback` while you learn something, or `explain-it-out-loud` to get ready for an interview, without setting anything up first.
+Eleven skills that work together. The teacher skill is home base and points to the others, so a teacher always knows which skill fits the job in front of it. Each skill also works on its own, outside a school: use `tutoring-and-feedback` while you learn something, or `explain-it-out-loud` to get ready for an interview, without setting anything up first.
 
 | Skill | What it does |
 |---|---|
 | `ai-school-setup` | The admissions counselor. Interviews you before school starts, writes your student profile, sets up your classes and opens one teacher per class. |
 | `school-teacher` | Home base for every teacher: who the teacher is, the ground rules, the school folder, the weekly rhythm, and which skill to use for each job. |
-| `class-planning` | Plans a class backward: what you must be able to do, what would prove it, then the lessons. Plans each week and each lesson, and suggests splitting a big subject into separate classes. |
+| `subject-research` | Researches a subject the way a careful teacher does. Finds how real teachers and courses already teach it, pulls their lesson plans, reads them in full and fact-checks every claim and example before anything reaches you. |
+| `class-planning` | Starts a class with research first and a real placement check, then plans backward: what you must be able to do, what would prove it, then the lessons. Plans each week and each lesson, and suggests splitting a big subject into separate classes. |
 | `lesson-teaching` | Teaches every lesson with the same routine, either live step by step (in-person classroom) or as a whole lesson you work through on your own (online class). |
-| `tutoring-and-feedback` | Helps when you're stuck, wrong or turning in work. Finds the real cause, uses a hint ladder instead of handing over answers, and gives feedback you act on. |
+| `tutoring-and-feedback` | Helps when you're stuck, wrong or turning in work, and checks work you made against its requirements. Finds the real cause, uses a hint ladder instead of handing over answers, and gives feedback you act on. |
 | `practice-and-review` | Warm-ups, spaced review, quizzes, tests, notes and refreshers, built on the practice methods with the strongest research behind them. |
 | `explain-it-out-loud` | Has you explain ideas in your own words and pushes the answer until it would hold up in a job interview. |
 | `progress-reports` | Keeps an honest record of what you can do without help, and writes session reports, weekly reports and handoff notes. |
@@ -42,7 +43,8 @@ Ten skills that work together. The teacher skill is home base and points to the 
 
 What that adds up to:
 
-- **Researches and plans before it asks anything of you.** A teacher finishes its research and writes the class plan and the first lesson plan before it gives you a single task or step, even if you say "let's start."
+- **Three roles per class, your pick.** A **study helper** helps you solidify something you're learning elsewhere, or go deep on one topic. A **full teacher** gives you the full classroom experience from the ground up. A **work checker** checks work you made and guides you to fix it without rewriting it for you. Every skill adapts to the role.
+- **Researches first, then runs a real placement check.** A new class doesn't start from five questions. The teacher studies how real courses teach the subject, fact-checks what it finds, builds a skill map, and then tests you in rounds from the basics up, as long as the subject needs. It writes the class plan and the first lesson plan before it gives you a single task or step, even if you say "let's start."
 - **Plans backward, four weeks at a time,** from what you must be able to do, with a goal for each week and a small project you can show off at the end.
 - **Teaches one small lesson a day with the same routine:** a warm-up on earlier lessons, today's goal, the big idea with a worked example and an analogy from your world, practice together, a hands-on task you do yourself, a "teach it back" step with one line you could say in an interview, and a short exit check.
 - **Guides instead of telling.** When you're stuck it asks a question, then gives a hint, then shows a similar example, and only shows the answer as a last resort.
@@ -56,6 +58,7 @@ What that adds up to:
 - **The principal** (your project chat) oversees the school. Every week it reads all the teachers' reports and sends you a progress report: how you're doing in each class, where you grew, your test scores and its honest take on what to focus on next.
 - **Class format, your call.** Pick **in-person classroom** (a live class where your teacher works with you step by step in the conversation, one small piece at a time, waiting for you at each step) or **online class** (each lesson arrives whole and you work through it on your own schedule, the default).
 - **Your style, your call.** Pick story mode (it feels like a real school, with teachers in character, quests and a report-card ceremony) or straight to the point (no roleplay, the default). Get test scores right away, or have them announced in your weekly progress report.
+- **Light mode** for anyone low on Claude usage. It skips extras and keeps messages short, but always keeps the fact-checking.
 - **Made for how you focus.** The counselor asks what helps you focus, and teachers use written steps, short blocks and breaks on request as defaults, and fade the support as you get stronger.
 - **Portal (optional).** A visual home page for your school, built as an interactive Claude artifact, with your classes, progress, notes and results in one place. The counselor offers it during setup with a heads-up that it uses noticeably more of your Claude usage, so it's only built if you say yes.
 
@@ -66,13 +69,13 @@ Pick the one that matches what you use. Each block can be copied and pasted as i
 ### Claude Projects, Claude.ai or the Claude app (as skills)
 
 1. Download this repository (green **Code** button, then **Download ZIP**) and unzip it.
-2. Make one zip for each of the ten folders inside `skills/`, so you end up with ten zips. On Windows, right-click a folder and choose **Send to > Compressed (zipped) folder**. On Mac or Linux, you can paste this in a terminal instead:
+2. Make one zip for each of the eleven folders inside `skills/`, so you end up with eleven zips. On Windows, right-click a folder and choose **Send to > Compressed (zipped) folder**. On Mac or Linux, you can paste this in a terminal instead:
    ```
    cd AI-School-Skills-main/skills
    for d in */; do zip -r "${d%/}.zip" "$d"; done
    ```
    (If your unzipped folder has a different name, use that name in the first line.)
-3. In Claude, go to **Settings > Capabilities**, find **Skills**, click **Upload skill** and upload each zip. Upload all ten, because the teacher skill points to the others. (Code execution needs to be turned on.)
+3. In Claude, go to **Settings > Capabilities**, find **Skills**, click **Upload skill** and upload each zip. Upload all eleven, because the teacher skill points to the others. (Code execution needs to be turned on.)
 
 ### Claude Code (as a plugin)
 
@@ -93,7 +96,7 @@ Start setup with `/ai-school:ai-school-setup`.
 
 ### OpenAI Codex
 
-Codex reads skills from a `.agents/skills` folder. Paste this in a terminal (Mac, Linux, or Git Bash on Windows) to install all ten skills for every project:
+Codex reads skills from a `.agents/skills` folder. Paste this in a terminal (Mac, Linux, or Git Bash on Windows) to install all eleven skills for every project:
 
 ```
 git clone https://github.com/Jaesonmoment/AI-School-Skills.git
@@ -177,7 +180,7 @@ Everything is written in plain English in the `SKILL.md` file inside each folder
 
 ## What's in this repo
 
-- `skills/<skill-name>/SKILL.md`: the ten skills listed in the table above, one folder each.
+- `skills/<skill-name>/SKILL.md`: the eleven skills listed in the table above, one folder each.
 - `skills/school-teacher/student-template.md`: the "about me" file, if you'd rather fill it in yourself.
 - `.claude-plugin/`: the files that let Claude Code install this as a plugin.
 

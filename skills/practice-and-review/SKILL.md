@@ -7,7 +7,9 @@ description: Make learning stick with the practice methods that have the stronge
 
 Most of what the student learns will fade unless they keep pulling it back out of memory, spread out over days and weeks. The methods with the strongest evidence in all of learning science are about exactly that, and they work the same for a child or an adult, in a classroom or one-on-one. This skill is how to use them.
 
-It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants to practice or be quizzed.
+It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants to practice or be quizzed. It is the main skill for the study helper role, working through the focus list in `plan.md`, and full teachers use it every lesson.
+
+**Light mode** (see `school-teacher`): keep the warm-ups and spaced review, which cost little and matter most. Use shorter quizzes and skip the block test's extras.
 
 ## Repetition that actually works
 "Learning by repetition" works when the repetition means **pulling the idea back out of memory, again and again, with gaps in between**. Rereading notes or hearing the same explanation again feels like learning but does little. So:

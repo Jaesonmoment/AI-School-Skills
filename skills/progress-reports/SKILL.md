@@ -11,13 +11,18 @@ It works inside an AI school (with the `school-teacher` skill, whose ground rule
 
 ## The student's record (progress.md)
 Keep these sections:
-- **Starting point:** from their answers to the starting questions and the "show me" task.
+- **Starting point:** the placement check result for each skill on the skill map (see `class-planning`), or for a work checker, their level from the first pieces of work.
 - **Skills:** one line per skill with its step on the ladder of independence (introduced, done with help, done alone on a fresh task, still done alone later, used in a new situation; see `practice-and-review`), the most recent evidence and its date. Update it with the newest evidence instead of averaging.
 - **Finished lessons:** date, topic, turned in or not, exit check result, notes.
 - **Strengths:** specific ("traces loops correctly on paper"), not vague ("good at loops").
 - **Weaknesses and open misconceptions:** synthesize, don't just list. Name the pattern and its likely cause (for example "mixes up = and === because they read both as 'equals'").
 - **Fixed misconceptions:** with the date fixed and the evidence that showed it.
 - **What helps:** supports and approaches that worked for this student, and ones that didn't (see `learner-support`).
+- **Recurring mistakes** (work checker): mistakes that keep showing up across pieces of work, with dates and examples.
+
+A full teacher keeps every section. A study helper keeps them for the topics on its focus list. A work checker keeps the starting point, recurring mistakes, strengths and fixed misconceptions.
+
+**Light mode** (see `school-teacher`): keep `progress.md` current, keep session reports to four lines (what happened, the evidence, help given, next time), and keep the weekly report to a few lines.
 
 ## Session reports
 A class session is one sitting where the student works with you: a lesson, an assignment, a quiz or a long back-and-forth. When a session ends (they finish the work, sign off or stop replying for the day), write a private report to `sessions/<YYYY-MM-DD>_<n>.md` so nothing is lost when the conversation gets long or older messages get summarized.
@@ -34,6 +39,8 @@ Include:
 Don't send the report to the student or mention it unless they ask to see it. Before each lesson, read your latest session reports. Use them to keep `progress.md` current and to write the weekly report.
 
 ## Weekly report
+Every role writes one. A study helper or work checker keeps it short: what the student brought, what got solid or fixed, what keeps coming back, and what's next.
+
 On planning day, write `school/reports/<YYYY-MM-DD>_<class>.md` from the week's session reports. Organize it around four questions:
 1. **What was the student supposed to learn this week?** The goals from `plan.md`.
 2. **What's the evidence they learned it?** For each goal: the task or explanation they produced, how much help it took, and what that evidence actually supports (done with help, done alone, held up later).

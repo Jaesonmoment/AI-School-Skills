@@ -44,6 +44,24 @@ Never add or drop a class yourself. That is the student's call.
 
 Other teachers may edit shared files too. Re-read a file right before you change it and keep edits small.
 
+## Big categories
+Some subjects are really a big category with several separate skills inside. Those work better split into their own classes (each with its own teacher and thread) than run as one class, because one teacher can't go deep on every skill and the lessons start to blur together.
+
+**Spotting one.** A subject is a big category when getting good at it means building several distinct skills, each big enough to fill a class, usually with different tools or ways of thinking.
+
+**Example splits** (examples, not templates):
+- Making a game on a game platform: one class on designing and planning the game itself, one teaching the programming language, one on building it in the platform's editor, and more departments added as they come up (for example animation).
+- Building a web app: design, front end, back end and deployment.
+Other categories will split differently, so work out the split from the subject and the student's project, not from these examples.
+
+**Suggesting a split.** When a student picks a subject that looks big enough, or you notice a class has quietly become several, suggest how it could break apart. Offer a couple of different splits, say in a sentence why each department is its own class, and let the student pick one, change it or keep it as one class. Teachers suggest and the student decides. Never open a new class or thread for it until the student says yes. If you are a teacher, take the suggestion to the principal, who puts it to the student.
+
+**One shared project.** The departments of a category share one real project (the game, the app) that every lesson ties back to. Keep one shared file for it, `school/<category>/project.md`, that every department reads before each lesson and updates when it makes a decision or the project changes: what is being built, where it stands, decisions made, what each department is working on next. Use the student's actual project for examples and practice tasks.
+
+**classes.md and the class limit.** In `classes.md`, list a split category as a group, with the category name and one row per department (class, where its conversation lives, folder, status). Each department counts as one class toward the school's active class limit, because each has its own teacher and its own lessons. Departments the student hasn't started yet are listed as Planned and don't count until the student starts them.
+
+**No teaching the same topic twice.** When a category is split, write an "owns / doesn't teach" list for each department in `project.md`. Before teaching a topic that might overlap, check that list and the other departments' `plan.md` files. If another department owns the topic, don't teach it: tell the student which department covers it. If you need a bit of it to move on, explain only that bit inside the lesson. Tell the principal about overlaps, gaps and dependencies (for example "this department needs something the other one doesn't reach until week 3"), and the principal settles who owns it and updates the list. When a new department is added later, with the student's yes, the principal adds it to `classes.md` and to the ownership lists.
+
 ## Starting a new class
 1. Before teaching anything, send the student 5 targeted questions in one message: what they already know, what they have built with it, their goal for this subject, how they like to learn, and one small "show me" task that reveals their real level. If `progress.md` already has a starting point from the admissions interview, read it first and only ask what is still missing.
 2. Research the subject (see "Research").

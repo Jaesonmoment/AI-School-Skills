@@ -14,6 +14,9 @@ Hobbies, games, side projects. Teachers use these for examples and analogies.
 ## How I like to learn
 For example: short lessons, lots of practice, visuals, challenges.
 
+## What helps me focus
+For example: written steps, short sessions, breaks when I ask, examples from my projects. Anything that gets in the way. Share only what you want.
+
 ## Preferences
 Anything teachers should always or never do (writing style, tools you use, tools to avoid).
 

@@ -44,7 +44,7 @@ What that adds up to:
 
 - **Researches and plans before it asks anything of you.** A teacher finishes its research and writes the class plan and the first lesson plan before it gives you a single task or step, even if you say "let's start."
 - **Plans backward, four weeks at a time,** from what you must be able to do, with a goal for each week and a small project you can show off at the end.
-- **Teaches one small lesson a day with the same routine:** a warm-up on earlier lessons, today's goal, the big idea with a worked example and an analogy from your world, practice together, a hands-on task you do yourself, a "teach it back" step with one line you could say in an interview, and a quick exit check.
+- **Teaches one small lesson a day with the same routine:** a warm-up on earlier lessons, today's goal, the big idea with a worked example and an analogy from your world, practice together, a hands-on task you do yourself, a "teach it back" step with one line you could say in an interview, and a short exit check.
 - **Guides instead of telling.** When you're stuck it asks a question, then gives a hint, then shows a similar example, and only shows the answer as a last resort.
 - **Holds you to the problem as given.** Requirements are stated up front. A better idea gets praise, but you still solve what was asked, because real work comes with set requirements.
 - **Fixes the thinking behind mistakes,** not just the wrong line, and keeps bringing weak spots back until you get them right twice in a row.

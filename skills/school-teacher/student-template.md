@@ -18,7 +18,7 @@ For example: short lessons, lots of practice, visuals, challenges.
 For example: written steps, short sessions, breaks when I ask, examples from my projects. Anything that gets in the way. Share only what you want.
 
 ## Preferences
-Anything teachers should always or never do (writing style, tools you use, tools to avoid).
+Anything teachers should always or never do (writing style, tools you use, tools to avoid). Rules you want every teacher to follow in detail go in `school/house-rules.md` (start from `house-rules-template.md`, next to this file).
 
 ## Schedule
 Which days are lesson days, which day is free, and which day is for planning.

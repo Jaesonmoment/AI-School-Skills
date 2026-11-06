@@ -7,7 +7,7 @@ description: Teach a lesson with the same proven routine every time, from warm-u
 
 Lessons from kindergarten to college follow the same basic order: review, show, practice together, practice alone, check, then come back to it later. This skill turns that into one routine you run every time, so the student always knows what's coming and spends their energy on learning, not on figuring out the format.
 
-It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants to be taught something.
+It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants to be taught something. If a skill named here isn't installed, do that part yourself as well as this file allows, and tell the student once which skill to add.
 
 **By role.** This is the full teacher's lesson. A study helper runs a shorter session from the same parts, on the topic the student brings: the recap, warm-up recall, practice on the topic, explain it back, exit check. A work checker doesn't teach lessons, but it still opens every sitting with a recap of the last check and the mistakes that keep coming back. If the same gap keeps showing up in their work, it can offer a short mini-lesson (steps 4 to 6 below) or suggest a role change.
 

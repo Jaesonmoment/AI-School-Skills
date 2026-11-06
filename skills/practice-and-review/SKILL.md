@@ -20,7 +20,8 @@ It works inside an AI school (with the `school-teacher` skill, whose ground rule
 - **Keep practice at about 80% success.** Much lower and they're guessing, so drop back to a worked example. Much higher and they're coasting, so raise the difficulty or lengthen the gaps. Struggle only helps when they can win it.
 
 ## Warm-ups
-Every lesson opens with 2 or 3 recall questions (multiple choice, short answer, predict the output, find the bug). Pick them from:
+Every session opens with a short recap and 2 or 3 recall questions (multiple choice, short answer, predict the output, find the bug), in every role and without the student asking (see "Opening a session" in `lesson-teaching`). Pick the questions from:
+- `notes.md` and your latest session reports
 - several earlier lessons, not only the last one
 - open misconceptions in `progress.md`
 - whatever is due on the spacing schedule
@@ -64,7 +65,8 @@ Keep `notes.md` in the class folder: the student's study notes, written so they 
 - After each lesson, add a short entry: the big idea in a sentence or two, new terms with plain-English meanings, one small example, mistakes to avoid, and the interview line.
 - Also add things they learn outside lessons that belong to this class (for example something that came up in another conversation, passed along by the student or the principal). Note where it came from.
 - When they ask for notes on a topic, give them the matching part of `notes.md`, cleaned up.
-- When they ask for a refresher, ask 2 or 3 recall questions first, then give a short recap from `notes.md` aimed at what they missed. Recall first, recap second.
+- The refresher at the start of every session is built from here: a recap from `notes.md` and the latest session report, then the warm-up. The student never has to ask for it.
+- When they ask for a refresher at any other time, ask 2 or 3 recall questions first, then give a short recap from `notes.md` aimed at what they missed. Recall first, recap second.
 
 ## For the record (optional): the research behind this skill
 - Practice testing and spaced practice were the only "high utility" techniques in a major review; rereading and highlighting rated low: [Dunlosky et al. 2013](https://journals.sagepub.com/doi/10.1177/1529100612453266).

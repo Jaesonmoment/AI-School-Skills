@@ -35,8 +35,9 @@ Include:
 - **Their view:** anything they said was useful, confusing or frustrating.
 - **What changed:** progress since the last session, and any misconception that is now fixed.
 - **Next time:** what to review, reteach or push on.
+- **Recap for next time:** the few lines you will open the next session with (where you stopped, the rule of the day, what to check first).
 
-Don't send the report to the student or mention it unless they ask to see it. Before each lesson, read your latest session reports. Use them to keep `progress.md` current and to write the weekly report.
+Don't send the report to the student or mention it unless they ask to see it. Before each session, read your latest session reports and open with the recap from them (see "Opening a session" in `lesson-teaching`). Use them to keep `progress.md` current and to write the weekly report.
 
 ## Weekly report
 Every role writes one. A study helper or work checker keeps it short: what the student brought, what got solid or fixed, what keeps coming back, and what's next.

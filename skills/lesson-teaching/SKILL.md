@@ -9,9 +9,9 @@ Lessons from kindergarten to college follow the same basic order: review, show, 
 
 It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants to be taught something.
 
-**By role.** This is the full teacher's lesson. A study helper runs a shorter session from the same parts, on the topic the student brings: warm-up recall, practice on the topic, explain it back, exit check. A work checker doesn't teach lessons. If the same gap keeps showing up in their work, it can offer a short mini-lesson (steps 4 to 6 below) or suggest a role change.
+**By role.** This is the full teacher's lesson. A study helper runs a shorter session from the same parts, on the topic the student brings: the recap, warm-up recall, practice on the topic, explain it back, exit check. A work checker doesn't teach lessons, but it still opens every sitting with a recap of the last check and the mistakes that keep coming back. If the same gap keeps showing up in their work, it can offer a short mini-lesson (steps 4 to 6 below) or suggest a role change.
 
-**Light mode** (see `school-teacher`): suggest the online class format or a shorter live class, use one worked example, and keep messages short. Keep the warm-up and the exit check, because they're what make it stick.
+**Light mode** (see `school-teacher`): suggest the online class format or a shorter live class, use one worked example, and keep messages short. Keep the recap, the warm-up and the exit check, because they're what make it stick.
 
 ## Before class
 Read `plan.md`, `progress.md`, your latest session reports and the conversation since your last lesson. Then:
@@ -22,8 +22,8 @@ Read `plan.md`, `progress.md`, your latest session reports and the conversation 
 ## The routine
 Run these steps in this order every lesson. Teach the routine to the student in the first lesson, keep it the same, and tell them ahead of time if anything about it changes.
 
-1. **Open the same way.** A short greeting, a written agenda in a few lines, and "where we left off."
-2. **Warm-up.** 2 or 3 recall questions from several earlier lessons, not only the last one, mixing old and new, done without notes. Don't show the answers. Grade them and explain the reasoning behind each correct answer. (See `practice-and-review` for picking them.)
+1. **Open the same way.** A short greeting, a written agenda in a few lines, and the recap: where you left off, in a few lines from your latest session report and `notes.md` (what was covered, the rule of the day, what was solid and what was still shaky, and the exact step if the last session stopped partway). Don't wait to be asked for it.
+2. **Warm-up.** 2 or 3 recall questions pulled from `notes.md`, your session reports and the open misconceptions in `progress.md`, from several earlier lessons, not only the last one, mixing old and new, done without notes. Don't show the answers. Grade them and explain the reasoning behind each correct answer. (See `practice-and-review` for picking them.)
 3. **Today's goal.** What they'll be able to do by the end and how they'll know, in terms of real use ("you'll be able to build X and explain why it works").
 4. **The idea, shown.** First ask them to try a small version, to see what they already know. If they can already do it, skip ahead. Otherwise explain the big idea in plain English with one worked example, thinking out loud as you solve it so they hear the reasoning, not just the steps. Keep explanations and examples together (the code next to what it means). Keep it short.
 5. **Practice together.** A similar problem where they do each step and you check each step before they move on.
@@ -32,6 +32,14 @@ Run these steps in this order every lesson. Teach the routine to the student in 
 8. **Close.** An exit check (one fresh question or tiny task, done without help), a "muddiest point" question ("What was the most confusing part today?"), a preview of next time and the homework. Log their mistakes so the next warm-up can bring them back.
 
 The steps stay fixed, but what goes in them is flexible. Start new material with an attempt, skip the explanation when they can already do it, and go back to a worked example when a new difficulty shows up.
+
+## Opening a session (the refresher)
+The recap and the warm-up happen at the start of every sitting, in every role, whether or not a full lesson follows, and without the student asking. A student who comes back after a day and a half and gets no refresher has been let down. Scale it to the gap:
+- **The next day:** a recap in a few lines plus 2 or 3 warm-up questions.
+- **A few days:** a longer recap plus more questions, reaching back to older material as well as the last session.
+- **A week or more:** a review session before anything new, built from `notes.md` and `progress.md`, until the key points come back.
+
+Also ask what they did since last time (homework, practice, anything they built) and grade it before moving on. If the last session stopped partway through the routine, pick up at that step right after the recap. When the student asks for a refresher at any other time, give one the same way (see "Notes and refreshers" in `practice-and-review`).
 
 ## How to explain
 - **Concrete first, then the rule.** Have them run or touch the real thing, then picture what happened (a diagram, a table, a trace), then write the general rule or syntax. Say out loud how each stage connects to the next.
@@ -51,10 +59,10 @@ Match the class format in `student.md`. If none is set, use online class.
 - Work alongside them. Do a similar example together first, then have them try theirs while you watch. React to each answer as it comes ("walk me through that line"), fix misunderstandings on the spot, and move on only when it clicked.
 - Read the room. If they struggle, slow down or reteach another way. If they are ahead, skip forward or add a stretch challenge.
 - Close like a real class: a short recap in their own words, the homework, and "class dismissed."
-- Class starts when the student shows up. If a daily message or scheduled task fires, send only a short invitation ("Class is starting, say 'ready' when you sit down") and wait. If they don't show, don't pile on: next time, pick up where the last class left off.
+- Class starts when the student shows up. If a daily message or scheduled task fires, send only a short invitation ("Class is starting, say 'ready' when you sit down") and wait. When they show up, the first thing they get is the recap and the warm-up, never new material. If they don't show, don't pile on: next time, pick up where the last class left off.
 
 **Online class.** The lesson is delivered whole, and the student works through it on their own schedule:
-- Send the lesson in one message, with the lesson file: warm-up, today's goal, the idea with a worked example, a practice-together problem with its worked answer hidden until they try, the hands-on task, the explain-it-back prompt and the exit check.
+- Send the lesson in one message, with the lesson file: the recap, warm-up, today's goal, the idea with a worked example, a practice-together problem with its worked answer hidden until they try, the hands-on task, the explain-it-back prompt and the exit check.
 - They do it on their own and reply when done. Then you grade with feedback, using `tutoring-and-feedback`.
 
 Class format is how the lesson is delivered. School style (story mode or straight to the point) is its flavor. They combine freely.

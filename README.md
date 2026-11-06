@@ -62,6 +62,23 @@ What that adds up to:
 - **Made for how you focus.** The counselor asks what helps you focus, and teachers use written steps, short blocks and breaks on request as defaults, and fade the support as you get stronger.
 - **Portal (optional).** A visual home page for your school, built as an interactive Claude artifact, with your classes, progress, notes and results in one place. The counselor offers it during setup with a heads-up that it uses noticeably more of your Claude usage, so it's only built if you say yes.
 
+## Pick what you need
+
+Every skill works on its own. Install the whole set for a school, or only the pieces you want. When a skill mentions another one you haven't installed, it does that part itself as well as it can and tells you once which skill to add.
+
+| You want to... | Install |
+|---|---|
+| Run a full school: classes, teachers, a principal, weekly reports | all eleven |
+| Learn one subject with one teacher and no school around it | `school-teacher`, `subject-research`, `class-planning`, `lesson-teaching`, `tutoring-and-feedback`, `practice-and-review`, `progress-reports` (add `explain-it-out-loud` and `learner-support` if you want them) |
+| Get help while you learn something elsewhere (a course, a book, your job) | `tutoring-and-feedback`, `practice-and-review`, `explain-it-out-loud` |
+| Have your own work checked without it being rewritten for you | `tutoring-and-feedback` |
+| Prepare for interviews, or check you really understand something | `explain-it-out-loud` |
+| Find out how a subject is taught before you learn it | `subject-research` |
+| Plan how to learn something | `class-planning` (with `subject-research`) |
+| Quiz yourself, keep study notes, space out your review | `practice-and-review` |
+| Keep an honest record of what you can do | `progress-reports` |
+| Get teaching adapted to how you focus | `learner-support` |
+
 ## Install
 
 Pick the one that matches what you use. Each block can be copied and pasted as is.
@@ -75,7 +92,7 @@ Pick the one that matches what you use. Each block can be copied and pasted as i
    for d in */; do zip -r "${d%/}.zip" "$d"; done
    ```
    (If your unzipped folder has a different name, use that name in the first line.)
-3. In Claude, go to **Settings > Capabilities**, find **Skills**, click **Upload skill** and upload each zip. Upload all eleven, because the teacher skill points to the others. (Code execution needs to be turned on.)
+3. In Claude, go to **Settings > Capabilities**, find **Skills**, click **Upload skill** and upload each zip. For a school, upload all eleven, because the teacher skill points to the others. Otherwise upload only the ones you picked under [Pick what you need](#pick-what-you-need). (Code execution needs to be turned on.)
 
 ### Claude Code (as a plugin)
 
@@ -94,6 +111,8 @@ Answer `y` to add the marketplace, then pick where to install it. On older versi
 
 Start setup with `/ai-school:ai-school-setup`.
 
+The plugin installs all eleven skills. To install only some, download this repository and copy the folders you want from `skills/` into `~/.claude/skills/` (for every project on your computer) or into `.claude/skills/` inside one project. They then work as plain skills, without the `/ai-school:` prefix.
+
 ### OpenAI Codex
 
 Codex reads skills from a `.agents/skills` folder. Paste this in a terminal (Mac, Linux, or Git Bash on Windows) to install all eleven skills for every project:
@@ -104,7 +123,7 @@ mkdir -p ~/.agents/skills
 cp -r AI-School-Skills/skills/* ~/.agents/skills/
 ```
 
-To use them in one project only, copy the folders into that project's `.agents/skills/` folder instead. You can also ask Codex's built-in `$skill-installer` to install them from this repository's link.
+To use them in one project only, copy the folders into that project's `.agents/skills/` folder instead, and to install only some, copy just those folders. You can also ask Codex's built-in `$skill-installer` to install them from this repository's link.
 
 ## Quick start without Projects (Claude Code, Claude app, Codex)
 
@@ -176,12 +195,33 @@ Each class thread also has a daily scheduled task that loads the teacher skill, 
 
 ## Make it your own
 
-Everything is written in plain English in the `SKILL.md` file inside each folder under [`skills/`](skills/). Change the interview questions, the lesson routine, the weekly schedule or the teaching style to fit how you learn. Each skill ends with a short "For the record" list of the research behind it. Pull requests with improvements are welcome.
+The skills are general on purpose. You make the school yours in three layers, from "no editing" to "fork it". The first two live outside the skills, so updating the skills never touches them.
+
+### 1. Your profile and your rules (nothing to edit)
+
+- **`school/student.md`** is who you are: background, goals, projects, how you learn, what helps you focus, your schedule and your choices (class format, school style, test results, light mode). Teachers read it before every lesson. The counselor writes it from your interview, or you fill in [`student-template.md`](skills/school-teacher/student-template.md) yourself.
+- **`school/house-rules.md`** is your rulebook for every teacher: how they write, tools to use or avoid, how strict to be, what every session must include, what never to do. Teachers read it after `student.md`, before every session, and follow it exactly. The counselor writes a first version from your interview, or you start from [`house-rules-template.md`](skills/school-teacher/house-rules-template.md). House rules can add to the teacher's ground rules and make them stricter, but not remove one: a teacher never does the work for you, whatever the file says, because that's what makes the learning real.
+- **Project instructions and personal preferences** (the paste-in blocks above) for anything you want in every chat, inside or outside school.
+
+### 2. Subject packs (add a skill, don't edit one)
+
+A subject pack is an extra skill for one subject that plugs into the teacher: the course map you want followed, the sources you trust, the tool setup, the conventions, the misconceptions to watch for and your own exercises. Teachers use a pack when it's installed and work from their own research when it isn't. Start from [`subject-pack-template.md`](skills/school-teacher/subject-pack-template.md), name the folder `<subject>-pack`, fill in the sections you need, and install it like any other skill. A pack is a good thing to share: publish it as its own repository, or open a pull request to add it here.
+
+### 3. Edit the skills (fork it)
+
+Everything is written in plain English in the `SKILL.md` file inside each folder under [`skills/`](skills/). Change the interview questions, the lesson routine, the weekly schedule or the teaching style to fit how you learn. Each skill ends with a short "For the record" list of the research behind it. Keep your version in your own fork so you can still pull updates, and send a pull request if your change would help others.
+
+### Updating
+
+Download the new version and install it again the same way you did the first time (new zips on claude.ai, `/plugin` in Claude Code, copy the folders again for Codex). Your `school/` folder, your house rules and your subject packs stay as they are. [`CHANGELOG.md`](CHANGELOG.md) lists what changed in each version.
 
 ## What's in this repo
 
 - `skills/<skill-name>/SKILL.md`: the eleven skills listed in the table above, one folder each.
 - `skills/school-teacher/student-template.md`: the "about me" file, if you'd rather fill it in yourself.
+- `skills/school-teacher/house-rules-template.md`: your rules for every teacher, kept outside the skills.
+- `skills/school-teacher/subject-pack-template.md`: the starting point for a subject pack, an extra skill for one subject.
+- `CHANGELOG.md`: what changed in each version.
 - `.claude-plugin/`: the files that let Claude Code install this as a plugin.
 
 Sources: [Claude Code plugins](https://code.claude.com/docs/en/plugins/install), [Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude), [Codex skills](https://developers.openai.com/codex/skills). The admissions interview draws on [Learning Styles: Concepts and Evidence](https://digitalcommons.usf.edu/psy_facpub/1765/) (why it doesn't sort you into a "learning style"), [the OARS method from motivational interviewing](https://health.uconn.edu/sbirtacademy/wp-content/uploads/sites/101/2018/03/MI-OARS-Handout.pdf) (open questions, reflecting back, summaries) and [diagnostic assessment](https://www.learningguild.com/articles/designing-it-right-making-an-impact-with-diagnostic-assessments) (checking real level, not just self-ratings).

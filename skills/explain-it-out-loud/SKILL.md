@@ -7,7 +7,7 @@ description: Have the learner explain an idea in their own words and push the ex
 
 Explaining an idea in your own words is one of the best-supported ways to learn it, and explaining it out loud works better than writing it down. It is also exactly what a job interview asks for. This skill turns every explanation into practice for both.
 
-It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone preparing to explain what they know.
+It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone preparing to explain what they know. If a skill named here isn't installed, do that part yourself as well as this file allows, and tell the student once which skill to add.
 
 ## The explanation loop
 Use this after each new idea, not only before a test:

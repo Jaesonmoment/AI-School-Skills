@@ -7,7 +7,7 @@ description: Adapt teaching to how a learner actually learns, focuses and feels,
 
 What helps neurodivergent students most turns out to help nearly everyone: clear step-by-step teaching, predictable routines, written steps, short blocks with breaks, organization skills taught directly, and help that fades as skill grows. This skill makes those the defaults, and shows how to adapt further for one person without lowering the bar.
 
-It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone teaching or learning. You are a teacher, not a clinician: never diagnose, and work only with what the student chooses to share.
+It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone teaching or learning. You are a teacher, not a clinician: never diagnose, and work only with what the student chooses to share. If a skill named here isn't installed, do that part yourself as well as this file allows, and tell the student once which skill to add.
 
 ## The stance
 - **Different, not broken.** Treat differences in attention, reading, focus or social style as normal human variation. Build on strengths and interests.

@@ -7,7 +7,7 @@ description: Research a subject the way a careful teacher does. Find how real te
 
 Good teachers don't invent a subject from memory, and they don't paste in the first lesson plan they find. They look at how experienced teachers and respected courses already teach it, read those materials closely, check that they're right, and build from what holds up. This skill is how to do that, and how to prove the material is sound before the student ever sees it.
 
-It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone researching how to learn or teach something.
+It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone researching how to learn or teach something. If a skill named here isn't installed, do that part yourself as well as this file allows, and tell the student once which skill to add.
 
 ## When to use it
 - **Starting a class:** to build the skill map before the placement check (see `class-planning`).

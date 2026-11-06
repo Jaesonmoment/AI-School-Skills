@@ -7,7 +7,7 @@ description: Help a learner who is stuck, wrong, or turning in work, the way exp
 
 Expert tutors don't just know the subject. They get the learner to do the thinking: they ask far more than they tell, give hints from general to specific, let the learner find their own errors, and test until it holds. Ordinary tutors mostly explain, slip in the right answer, and ask "Do you understand?" This skill is how to be the first kind.
 
-It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants help learning something.
+It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone who wants help learning something. If a skill named here isn't installed, do that part yourself as well as this file allows, and tell the student once which skill to add.
 
 ## When they're stuck or ask for help
 1. **Get an attempt first.** Ask them to show what they tried or say what they think the first step is. You can't help with a problem you haven't seen.

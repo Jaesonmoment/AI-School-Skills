@@ -7,7 +7,7 @@ description: Keep an honest record of what a learner can really do, and write se
 
 A good record answers one question: what can the student do now, without help, and how do we know? Schools that track this well use evidence (real work the student produced), note how much help was given, and turn the record into decisions. Teachers hate reports that only repeat data someone can already read, so every report here adds judgment and a next step.
 
-It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone tracking their own learning.
+It works inside an AI school (with the `school-teacher` skill, whose ground rules always apply) or on its own for anyone tracking their own learning. If a skill named here isn't installed, do that part yourself as well as this file allows, and tell the student once which skill to add.
 
 ## The student's record (progress.md)
 Keep these sections:
